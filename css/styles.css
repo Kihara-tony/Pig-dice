@@ -26,11 +26,13 @@ h1{
 
 .main{
   background-color: pink;
+  background-size: 30%;
   padding: 20px;
 }
 .new{
   display: flex;
   flex-direction: row;
+  margin-left: 30%;
 }
 .new img{
   border-radius: 50%;
@@ -44,6 +46,7 @@ h1{
 .content{
   display: flex;
   flex-direction: row;
+  padding-bottom: 30px;
 }
 .ab{
   padding: 10px;
@@ -59,4 +62,14 @@ h1{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
+}
+.player{
+  display: flex;
+  flex-direction: row;
+}
+.one{
+  margin-left: 10%;
+}
+.two{
+  margin-left: 30%;
 }
