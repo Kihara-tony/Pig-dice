@@ -7,3 +7,17 @@
 h1{
   text-align: center;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+}
+.about{
+  padding: 30px;
+}
+.instruct{
+  padding: 30px;
+}
+.rules{
+  padding: 30px;
+}
