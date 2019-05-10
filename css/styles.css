@@ -6,6 +6,8 @@
 }
 h1{
   text-align: center;
+  font-family: 'Monoton', cursive;
+  color: green;
 }
 .row{
   display: flex;
@@ -14,14 +16,17 @@ h1{
 }
 .about{
   padding: 30px;
+  font-family: 'Orbitron', sans-serif;
 }
 .instruct{
   padding: 30px;
   padding-left: 60px;
+  font-family: 'Orbitron', sans-serif;
 }
 .rules{
   padding: 30px;
   padding-left: 60px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .main{
@@ -35,6 +40,7 @@ h1{
   flex-direction: row;
   margin-left: 40%;
   padding-bottom:20px;
+  font-family: 'Modak', cursive;
 }
 .new img{
   border-radius: 50%;
@@ -54,16 +60,19 @@ h1{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
+  display: none;
 }
 .ins{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
+  display: none;
 }
 .rul{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
+  display:none;
 }
 .player{
   display: flex;
@@ -85,6 +94,7 @@ h1{
   border-radius: 5px 5px 5px 5px;
   color: white;
   box-shadow:2px 3px 4px orange;
+  font-family: 'Orbitron', sans-serif;
 
 }
 .current{
@@ -95,10 +105,14 @@ h1{
   color: white;
   margin-top: 10px;
   box-shadow:2px 3px 4px orange;
+  font-family: 'Orbitron', sans-serif;
 }
 button{
   color:white;
   background-color:green;
   border-radius:7px 7px 7px 7px;
   box-shadow:2px 3px 4px blue;
+}
+h2{
+  font-family: 'Orbitron', sans-serif;
 }
