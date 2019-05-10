@@ -23,14 +23,15 @@ h1{
   padding: 30px;
   padding-left: 60px;
 }
+
+.main{
+  background-color: pink;
+  padding: 20px;
+}
 .new{
   display: flex;
   flex-direction: row;
 }
 .new img{
   border-radius: 50%;
-}
-.main{
-  background-color: pink;
-  padding: 20px;
 }
