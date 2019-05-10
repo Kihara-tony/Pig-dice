@@ -39,5 +39,24 @@ h1{
   text-align: center;
   font-size: 1.3em;
   font-family: 'Yeon Sung', cursive;
-  color: orange;
+  color: black;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.ab{
+  padding: 10px;
+  border:1px solid black;
+  border-radius: 7px 7px 7px 7px;
+}
+.ins{
+  padding: 10px;
+  border:1px solid black;
+  border-radius: 7px 7px 7px 7px;
+}
+.rul{
+  padding: 10px;
+  border:1px solid black;
+  border-radius: 7px 7px 7px 7px;
 }
