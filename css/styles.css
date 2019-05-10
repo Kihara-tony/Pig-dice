@@ -35,3 +35,7 @@ h1{
 .new img{
   border-radius: 50%;
 }
+.text{
+  text-align: center;
+  font-size: 1.3em;
+}
