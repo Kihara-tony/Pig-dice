@@ -37,7 +37,7 @@ h1{
 .new img{
   border-radius: 50%;
 }
-.text{
+.content{
   text-align: center;
   font-size: 1.3em;
   font-family: 'Yeon Sung', cursive;
@@ -72,4 +72,14 @@ h1{
 }
 .two{
   margin-left: 30%;
+}
+.button{
+  margin-left: 30%;
+}
+.total{
+  background-color: grey;
+  padding-bottom: 50px;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
 }
