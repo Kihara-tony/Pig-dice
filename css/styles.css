@@ -28,11 +28,13 @@ h1{
   background-color: pink;
   background-size: 30%;
   padding: 20px;
+  border-radius: 9px 9px 9px 9px;
 }
 .new{
   display: flex;
   flex-direction: row;
-  margin-left: 30%;
+  margin-left: 40%;
+  padding-bottom:20px;
 }
 .new img{
   border-radius: 50%;
@@ -68,13 +70,13 @@ h1{
   flex-direction: row;
 }
 .one{
-  margin-left: 10%;
+  margin-left: 20%;
 }
 .two{
-  margin-left: 30%;
+  margin-left: 40%;
 }
 .button{
-  margin-left: 30%;
+  margin-left: 45%;
 }
 .total{
   background-color: grey;
@@ -82,4 +84,21 @@ h1{
   padding: 10px;
   border-radius: 5px 5px 5px 5px;
   color: white;
+  box-shadow:2px 3px 4px orange;
+
+}
+.current{
+  background-color: grey;
+  padding-bottom: 50px;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  margin-top: 10px;
+  box-shadow:2px 3px 4px orange;
+}
+button{
+  color:white;
+  background-color:green;
+  border-radius:7px 7px 7px 7px;
+  box-shadow:2px 3px 4px blue;
 }
