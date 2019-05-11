@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <script type="text/javascript" src="MDB/js/jquery-3.4.0.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript"  src="js/jquery-3.4.0.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
@@ -21,7 +20,7 @@
         <div class="col-md-4">
           <div class="about">
             <p>About Game</p>
-            <img id="game" src="img/game.gif" alt="game" height="80" width="80">
+            <img  "id="game" src="img/game.gif" alt="game" height="80" width="80">
           </div>
           <div class="ab">
             <h3>About Game</h3>
@@ -67,7 +66,7 @@
         <div class="new">
           <img src="img/153-1530896_accomplish-comments-direction-icon-clipart.png" alt="img" height="30" width="30">
           <h2 >New Game</h2>
-          <input type="submit" name="play" value="play" id="submit" onClick="game()">
+          <input type="button" name="play" value="play" id="game">
         </div>
         <div class="player">
           <div class="one">
@@ -75,34 +74,37 @@
             <h2 class="player1"></h2>
             <div class="total">
               <p><strong>TOTAL:</strong></p>
-              <p></p>
+              <p class="remove"></p>
             </div>
             <div class="current">
               <p>CURRENT:</p>
-              <p></p>
+              <p class="insert"></p>
             </div>
+            <p class="winner"></p>
           </div>
           <div class="two">
             <h2>Player 2</h2>
             <h2 class="player2"></h2>
             <div class="total">
               <p><strong>TOTAL:</strong></p>
-              <p></p>
+              <p class="remove"></p>
            </div>
            <div class="current">
              <p>CURRENT:</p>
-             <p></p>
+             <p class="insert"></p>
            </div>
+           <p class="winner"></p>
           </div>
         </div>
         <div class="button">
           <button type="button" id="roll" name="button">Roll</button>
-          <button type="button" name="button">Hold</button>
+          <button type="button"id="hold" name="button">Hold</button>
         </div>
-
       </div>
-
+      <marquee><p>copyright &copy tonykiharatonkin6@gmail.com 2019</p></marquee>
     </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript"  src="js/jquery-3.4.0.js"></script>
 
 
   </body>
