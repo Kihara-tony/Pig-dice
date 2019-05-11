@@ -8,65 +8,71 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <script type="text/javascript" src="MDB/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript"  src="js/jquery-3.4.0.js"></script>
   </head>
-  <script type="text/javascript" src="scripts.js"></script>
-  <script type="text/javascript"  src="jquery-3.4.0.js"></script>
   <body>
     <div class="container">
       <img src="https://static1.squarespace.com/static/571fcb08746fb94704c12bf3/5acfa54003ce64b9a48b2b76/5acfa55803ce64b9a48b3022/1523557722022/set-it-off-dice-gif-2.gif" alt="logo" height="70" width="70">
       <h1>PIG DICE</h1>
       <div class="row">
-            <div class="about">
-              <p>About Game</p>
-              <img id="game" src="img/game.gif" alt="game" height="80" width="80">
 
-            </div>
-            <div class="instruct">
-              <p>Instructions</p>
-              <img src="img/dice-gif-5.gif" alt="play" height="80" width="80">
-            </div>
-            <div class="rules">
-              <p>Rules</p>
-              <img src="img/drawn-dice-gif-animation-428870-3857408.gif" alt="rules" width="80" height="80">
-            </div>
+        <div class="col-md-4">
+          <div class="about">
+            <p>About Game</p>
+            <img id="game" src="img/game.gif" alt="game" height="80" width="80">
+          </div>
+          <div class="ab">
+            <h3>About Game</h3>
+            <p>Pig is a great dice game that is rather unique and fun for all to play with.</p>
+            <p>It is a game that is popular among many people for being challenging and requiring quite a bit of thought in order to win. In addition, the game has become popular in schools as a game that teaches probability.</p>
+            <p>The game focuses on probability as it allows people to devise their own ideas on when certain numbers are to show up. Players can use this game to create their own strategies as to whether they should keep rolling or not.</p>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="instruct">
+            <p>Instructions</p>
+            <img src="img/dice-gif-5.gif" alt="play" height="80" width="80">
+          </div>
+          <div class="ins">
+            <h3>Instuction of play</h3>
+            <p>Pig is played by using a few simple steps. First, the die is rolled to get a number.</p>
+            <p>If the number is between 2 to 6 then the player can take the points on has and roll again to get more.</p>
+            <p>However, if the player gets a 1 then the player scores a 0 for that round. The next player will get to roll.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="rules">
+            <p>Rules</p>
+            <img src="img/drawn-dice-gif-animation-428870-3857408.gif" alt="rules" width="80" height="80">
+          </div>
+          <div class="rul">
+            <h3>RULES</h3>
+            <p>The rules of the game are:</p>
+            <ul>
+              <li>When the player rolls a 2 - 6, the dice score is added to their turn total and they can continue to play.</li>
+              <li>When a player rolls a 1, their total score reverts to 0 and it becomes the next player's turn.</li>
+              <li>When the player chooses to "hold"(pass their turn), their turn total is added to their total score, and it becomes the next player's turn.</li>
+              <li>The player who first scores 100 or more points wins the game.</li>
+            </ul>
+            <p>Try your luck!!!</p>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        <div class="ab">
-          <h3>About Game</h3>
-          <p>Pig is a great dice game that is rather unique and fun for all to play with.</p>
-          <p>It is a game that is popular among many people for being challenging and requiring quite a bit of thought in order to win. In addition, the game has become popular in schools as a game that teaches probability.</p>
-          <p>The game focuses on probability as it allows people to devise their own ideas on when certain numbers are to show up. Players can use this game to create their own strategies as to whether they should keep rolling or not.</p>
-          <p>It is a fascinating concept as it shows how all people will have their own ideas on how probability may work in a particular game as it goes along.</p>
-        </div>
-        <div class="ins">
-          <h3>Instuction of play</h3>
-          <p>Pig is played by using a few simple steps. First, the die is rolled to get a number.</p>
-          <p>If the number is between 2 to 6 then the player can take the points on has and roll again to get more.</p>
-          <p>However, if the player gets a 1 then the player scores a 0 for that round. The next player will get to roll.</p>
-        </div>
-        <div class="rul">
-          <h3>RULES</h3>
-          <p>The rules of the game are:</p>
-          <ul>
-            <li>When the player rolls a 2 - 6, the dice score is added to their turn total and they can continue to play.</li>
-            <li>When a player rolls a 1, their total score reverts to 0 and it becomes the next player's turn.</li>
-            <li>When the player chooses to "hold"(pass their turn), their turn total is added to their total score, and it becomes the next player's turn.</li>
-            <li>The player who first scores 100 or more points wins the game.</li>
-          </ul>
-          <p>Try your luck!!!</p>
-
-        </div>
-    </div>
 
       <div class="main">
         <div class="new">
           <img src="img/153-1530896_accomplish-comments-direction-icon-clipart.png" alt="img" height="30" width="30">
-          <h2>New Game</h2>
+          <h2 >New Game</h2>
+          <input type="submit" name="play" value="play" id="submit" onClick="game()">
         </div>
         <div class="player">
           <div class="one">
             <h2>Player 1</h2>
+            <h2 class="player1"></h2>
             <div class="total">
               <p><strong>TOTAL:</strong></p>
               <p></p>
@@ -78,6 +84,7 @@
           </div>
           <div class="two">
             <h2>Player 2</h2>
+            <h2 class="player2"></h2>
             <div class="total">
               <p><strong>TOTAL:</strong></p>
               <p></p>
@@ -89,12 +96,14 @@
           </div>
         </div>
         <div class="button">
-          <button type="button" name="button">Roll</button>
+          <button type="button" id="roll" name="button">Roll</button>
           <button type="button" name="button">Hold</button>
         </div>
 
       </div>
 
     </div>
+
+
   </body>
 </html>

@@ -12,7 +12,8 @@ h1{
 .row{
   display: flex;
   flex-direction: row;
-  margin-left: 30%;
+  margin-left: 10%;
+  padding-bottom: 20px;
 }
 .about{
   padding: 30px;
@@ -45,34 +46,29 @@ h1{
 .new img{
   border-radius: 50%;
 }
-.content{
-  text-align: center;
-  font-size: 1.3em;
-  font-family: 'Yeon Sung', cursive;
-  color: black;
-}
-.content{
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 30px;
-}
 .ab{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
   display: none;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 1.2em;
 }
 .ins{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
   display: none;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 1.2em;
 }
 .rul{
   padding: 10px;
   border:1px solid black;
   border-radius: 7px 7px 7px 7px;
   display:none;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 1.2em;
 }
 .player{
   display: flex;
