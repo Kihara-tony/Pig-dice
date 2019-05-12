@@ -1,3 +1,10 @@
+function player(name,roll,total,active,playing) {
+  this.name = name;
+  this.roll =0;
+  this.total=0;
+  this.active=active;
+  playing = true;
+}
 $(document).ready(function(){
   $(".about").click(function(){
     $(".ab").show();
@@ -8,78 +15,82 @@ $(document).ready(function(){
     $(".about").show();
   })
   $(".instruct").click(function(){
-    jQuery(".ins").show();
-    jQuery(".instruct").hide();
+    $(".ins").show();
+    $(".instruct").hide();
   });
   $(".ins").click(function(){
-    jQuery(".instruct").show();
-    jQuery(".ins").hide();
+    $(".instruct").show();
+    $(".ins").hide();
   });
   $(".rules").click(function(){
-    jQuery(".rul").show();
-    jQuery(".rules").hide();
+    $(".rul").show();
+    $(".rules").hide();
   });
   $(".rul").click(function(){
-    jQuery(".rules").show();
-    jQuery(".rul").hide();
+    $(".rules").show();
+    $(".rul").hide();
   });
   $("#game").click(function(){
     var player1=prompt("Enter name of the first player:")
-    var player2=prompt("Enter name of the second player:")
     $(".player1").text(player1);
+    var player2=prompt("Enter name of the second player:")
     $(".player2").text(player2);
   });
+  var active = function(){
+    if(player1.active ===true && player2.active ===false){
+      $(".one").prop("disabled",false);
+      $(".two").prop("disabled",true);
+    }
+    else {
+      $(".one").prop("disabled",true);
+      $(".two").prop("disabled",false);
+    };
+  };
+
+
+  // roll button
+ player.prototype.dice =funtion(){
+   var guess =Math.floor(Math.random() * 6);
+   this.roll = guess;
+   $("insert").text(roll);
+   active();
+   if(guess=== 1){
+     this.total = 0;
+     this.roll = 1;
+     if (this.active === player1.active) {
+       player1.active = false;
+       player2.active = true;
+       $(".one").children().prop("disabled",true);
+       $(".one").addClass("disablePlaying");
+       $(".two").children().prop("disabled",false);
+       $(".two").removeClass("disablePlaying");
+     }
+     else if (this.active === player2.active) {
+       player2.active =false;
+       player1.active = true;
+       $(".two").children().prop("disabled",true);
+       $(".two").addClass("disablePlaying");
+       $(".one").children().prop("disabled",false);
+       $(".one").removeClass("disableplaying");
+     }
+     else {
+       this.total += guess;
+     }
+   };     
+ };
+  // hold button
+  $("#hold").click(function(){
+    if(playing){
+      total[active] +=roll;
+      $(".remove" + active).text(total[active]);
+    }
+    // winner
+    if(total[active]>=15){
+      $(".winner" + active).text("Winner!");
+      playing=false;
+    }
+    else{
+      next();
+    }
+  });
 });
-
-function player(name,roll,total,active) {
-  this.name = name;
-  this.roll =0;
-  this.total=0;
-  this.active=active;
-}
-
-function next(){
-  active ===1 || active ===0;
-
-}
-//  $(document).ready(function(){
-//
-//
-//    // new game play button
-//    $("#submit").click(function(){
-//      init();
-//    });
-//
-//    // roll button
-//    $("#roll").click(function(){
-//      if(playing){
-//        rolls =math.floor(math.random()*6)+1;
-//      }
-//      if(rolls !==1){
-//        roll += rolls;
-//        $(".insert" + active).text(roll);
-//      }
-//      else{
-//        next();
-//      }
-//    })
-//
-//    // hold button
-//    $("#hold").click(function(){
-//      if(playing){
-//        total[active] +=roll;
-//        $(".remove" + active).text(total[active]);
-//      }
-//    //
-//    //   // winner
-//    //   if(total[active]>=15){
-//    //     $(".winner" + active).text(Winner!);
-//    //     playing=false;
-//    //   }
-//    //   else{
-//    //     next();
-//    //   }
-//    // })
-//
-// });
-// })
