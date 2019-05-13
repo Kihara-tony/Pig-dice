@@ -2,7 +2,7 @@
 -----------------
 **Created by Tony Kihara**
 ------------------
-## DESCRIPTION :note:
+## DESCRIPTION :memo:
  ~~~
  It is a game that mainly entails rolling of dices among two parties.
  It record  the highest points of one player and declares him/her the winner.
