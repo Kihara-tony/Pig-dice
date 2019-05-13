@@ -6,6 +6,7 @@ function Player(){
   this.cumulative = 0;
   this.total = 0;
 }
+
 player1 = new Player();
 player2 = new Player();
 
@@ -33,7 +34,6 @@ Player.prototype.win = function(){
     alert("player2 has won !!!!!!!!!!!!")
   }
 };
-
 $(document).ready(function(){
   $(".about").click(function(){
     $(".ab").show();
