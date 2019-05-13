@@ -1,10 +1,3 @@
-function player(name,roll,total,active,playing) {
-  this.name = name;
-  this.roll =0;
-  this.total=0;
-  this.active=active;
-  playing = true;
-}
 $(document).ready(function(){
   $(".about").click(function(){
     $(".ab").show();
@@ -13,7 +6,7 @@ $(document).ready(function(){
   $('.ab').click(function(){
     $(".ab").hide();
     $(".about").show();
-  })
+  });
   $(".instruct").click(function(){
     $(".ins").show();
     $(".instruct").hide();
@@ -46,51 +39,37 @@ $(document).ready(function(){
       $(".two").prop("disabled",false);
     };
   };
-
+  function player(name,roll,total,active,playing) {
+    this.roll =0;
+    this.total=0;
+    this.active=active;
+    playing = true;
+  }
+  function user() {
+    if (player1.active === true && player2.active === false) {
+        $('.one').children().prop('disabled', false);
+        $('.one').removeClass('disableGamingArea');
+        $('.two').children().prop('disabled', true);
+        $('.two').addClass('disableGamingArea');
+    } else {
+        $('.one').children().prop('disabled', true);
+        $('.one').addClass('disableGamingArea');
+        $('.two').children().prop('disabled', false);
+        $('.two').removeClass('disableGamingArea');
+    }
+};
 
   // roll button
- player.prototype.dice =funtion(){
-   var guess =Math.floor(Math.random() * 6);
-   this.roll = guess;
-   $("insert").text(roll);
-   active();
-   if(guess=== 1){
-     this.total = 0;
-     this.roll = 1;
-     if (this.active === player1.active) {
-       player1.active = false;
-       player2.active = true;
-       $(".one").children().prop("disabled",true);
-       $(".one").addClass("disablePlaying");
-       $(".two").children().prop("disabled",false);
-       $(".two").removeClass("disablePlaying");
-     }
-     else if (this.active === player2.active) {
-       player2.active =false;
-       player1.active = true;
-       $(".two").children().prop("disabled",true);
-       $(".two").addClass("disablePlaying");
-       $(".one").children().prop("disabled",false);
-       $(".one").removeClass("disableplaying");
-     }
-     else {
-       this.total += guess;
-     }
-   };     
- };
-  // hold button
-  $("#hold").click(function(){
-    if(playing){
-      total[active] +=roll;
-      $(".remove" + active).text(total[active]);
-    }
-    // winner
-    if(total[active]>=15){
-      $(".winner" + active).text("Winner!");
-      playing=false;
-    }
-    else{
-      next();
-    }
+  function guess(){
+    return Math.floor((Math.random()*6)+1);
+    user();
+  }
+  $("#roll").click(function(){
+    $(".insert").text(guess());
   });
+  // function total(){
+  //   return total += guess;
+  // }
+  // $("#hold").click(function(){
+  //   $(".remove").text(total());
 });
