@@ -114,3 +114,23 @@ button{
 h2{
   font-family: 'Orbitron', sans-serif;
 }
+.roll1{
+  background-color: grey;
+  padding-bottom: 50px;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  margin-top: 10px;
+  box-shadow:2px 3px 4px orange;
+  font-family: 'Orbitron', sans-serif;
+}
+.roll2{
+  background-color: grey;
+  padding-bottom: 50px;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  margin-top: 10px;
+  box-shadow:2px 3px 4px orange;
+  font-family: 'Orbitron', sans-serif;
+}
